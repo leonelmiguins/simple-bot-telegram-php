@@ -2,9 +2,7 @@
 //BOT EM PHP CRIADO POR LEONEL MIGUINS
 //não esqueça de por o bot como administrador
 
-//set webhook
-//https://api.telegram.org/bot5125492606:AAEii97ydGkPkdvlL9PaYLRbUiZNH82K5C0/setWebhook?url=https://leomiguins.000webhostapp.com/bot-telegram-php/index.php
-
+//não esqueça de setar o webhook. detalhes no arquivo README.MD
 
 echo "<h1>O Bot no telegram feito em PHP está rodando!<h1>";
 
@@ -26,7 +24,7 @@ $member_name = $message->reply_to_message->from->first_name;
 $member_id = $message->reply_to_message->from->id;
 
 //token do bot pego no botfather
-$token = '5125492606:AAEii97ydGkPkdvlL9PaYLRbUiZNH82K5C0';
+$token = 'TOKEN_DO_SEU_BOT';
 
 
 if($text == "/start"){
