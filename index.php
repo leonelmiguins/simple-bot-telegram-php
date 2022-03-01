@@ -24,7 +24,7 @@ $member_name = $message->reply_to_message->from->first_name;
 $member_id = $message->reply_to_message->from->id;
 
 //token do bot pego no botfather
-$token = "5213520698:AAFfjfXb5-sNWJChOv-gq1o9UMLWVdFBXuk";//$token = 'TOKEN_DO_SEU_BOT';
+$token = 'TOKEN_DO_SEU_BOT';
 
 
 if($text == "/start"){
