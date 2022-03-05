@@ -56,6 +56,15 @@ if(preg_match("/http/i", $text) == true or preg_match("/www./i", $text) == true 
    
 }
 
+//teclado
+if($text == "/teclado"){
+   $keyboard = array(array("[Opção 1]","[Opção 2]","[Opção 3]"));
+   $resp = array("keyboard" => $keyboard,"resize_keyboard" => true,"one_time_keyboard" => true);
+   $reply = json_encode($resp);
+       file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=Você não possui um personagem&reply_markup=".$reply); 
+   
+}
+
 
 if($text == "/username"){
    $txt2 = "Seu nome de usuario: $user_name";
