@@ -32,6 +32,14 @@ if($text == "/start"){
    
 }
 
+ if($text == "/rest"){
+   //restringir membro de mandar menssagem
+       $data = $msg_data + 60; //restrição de 60 segundos
+       file_get_contents("https://api.telegram.org/bot$token/restrictChatMember?chat_id=$chat_id&user_id=$member_id&permissions{can_send_messages: false}&until_date=$data"); 
+       file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=Restrição em $member_name de 60 segundos!");
+         
+}
+
 
 if($text == "/userid"){
    $txt = "Seu chat id: $chat_id";
