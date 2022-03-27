@@ -40,6 +40,20 @@ if($text == "/start"){
          
 }
 
+//botões com links
+if($text == "/inline"){
+   $inline_button1 = array("text"=>"Google url","url"=>"http://google.com");
+   $inline_button2 = array("text"=>"👉 Canal Telegram","url"=>"https://t.me/AnimesDubladosTv");
+   $inline_keyboard = [[$inline_button1,$inline_button2]];
+   $keyboard=array("inline_keyboard"=>$inline_keyboard);
+   $replyMarkup = json_encode($keyboard); 
+   
+  $txt = "<b>Botões com links: </b>";
+      file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$txt&parse_mode=HTML&reply_markup=".$replyMarkup);
+
+   }
+
+
 
 if($text == "/userid"){
    $txt = "Seu chat id: $chat_id";
