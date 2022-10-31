@@ -16,7 +16,7 @@ crie um bot no botfather e pegue o token do mesmo.
 
 # 2 - SETAR O WEBHOOK:
 
-https://api.telegram.org/bot<TOKEN_DO_SEU_BOT>/setWebhook?url=<LINK_DO_SCRIPt_PHP_NO_SERVIDOR>
+https://api.telegram.org/bot<TOKEN_DO_SEU_BOT>/setWebhook?url=<LINK_DO_SCRIPT_PHP_NO_SERVIDOR>
 
 <i>Exemplo:</i>
 
