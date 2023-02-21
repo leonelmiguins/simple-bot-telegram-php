@@ -1,10 +1,10 @@
 # BOT TELEGRAM COM PHP
 
-## sobre
+### Sobre
 
 Exemplo de bot para Telegram feito em PHP.
 
-## requisitos
+### Requisitos
 
 1. Um servidor na internet com suporte a PHP para upar seu script.
 
@@ -16,7 +16,7 @@ link aqui: https://br.000webhost.com/
 
 crie um bot no botfather e pegue o token do mesmo.
 
-## webhook
+### Webhook
 
 https://api.telegram.org/bot<TOKEN_DO_SEU_BOT>/setWebhook?url=<LINK_DO_SCRIPT_PHP_NO_SERVIDOR>
 
@@ -26,8 +26,8 @@ https://api.telegram.org/bot0101010101:AAEii97ydGkPkdvlL9PaYLaaa1NN5/setWebhook?
 
 - Copie e cole o código no navegador, o telegram ira redirecionar as requisições ao seu bot para o script PHP no seu servidor.
 
-## obervações
+### obervações
 
 
-<i>Se o bot for colocado em um grupo nao esqueça de deixa-lo como administrador</i>
+Se o bot for colocado em um grupo nao esqueça de deixa-lo como administrador
 
